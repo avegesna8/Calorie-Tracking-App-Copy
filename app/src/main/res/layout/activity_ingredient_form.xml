@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ingredientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingredient Name" />
+
+    <EditText
+        android:id="@+id/ingredientQuantity"
+        android:inputType="number|numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity" />
+
+    <EditText
+        android:id="@+id/ingredientCalories"
+        android:inputType="number|numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calories per Serving" />
+
+    <CheckBox
+        android:id="@+id/expirationCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Expiration Date (Optional)" />
+
+    <DatePicker
+        android:id="@+id/ingredientExpirationDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/addIngredientButton"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add" />
+
+</LinearLayout>

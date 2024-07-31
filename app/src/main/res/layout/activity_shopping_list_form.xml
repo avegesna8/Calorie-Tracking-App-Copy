@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ingredientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingredient Name" />
+
+    <EditText
+        android:id="@+id/ingredientQuantity"
+        android:inputType="number|numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity" />
+
+    <EditText
+        android:id="@+id/ingredientCalories"
+        android:inputType="number|numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calories per Serving" />
+
+    <Button
+        android:id="@+id/addIngredientButton"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add" />
+
+</LinearLayout>
